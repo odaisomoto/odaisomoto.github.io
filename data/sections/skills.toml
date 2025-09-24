@@ -2,14 +2,14 @@
 [[skill]]
   title = "Content Strategy & Scripting"
   text  = "I translate raw ideas into clear content direction—writing scripts, building storyboards, and shaping narrative arcs tailored for each platform like TikTok, Reels, YouTube, or digital campaigns."
-  icon  = "bx-cloud"
+  icon  = "bx-brain"
 
 [[skill]]
   title = "Shooting & Directing"
   text  = "Skilled in managing full-scale production from pre-pro to shoot day—handling framing, lighting, audio, and talent direction to ensure each shot aligns with brand aesthetics and emotional tone."
-  icon  = "bxl-docker"
+  icon  = "bx-camera"
 
 [[skill]]
   title = "Editing & Motion Graphics"
   text  = "Experienced in Premiere Pro, CapCut, After Effects, and DaVinci Resolve. From high-paced Reels to cinematic storytelling, I craft visually engaging edits with strong pacing, transitions, subtitles, and color grading that convert viewers to fans."
-  icon  = "bxl-nodejs"
+  icon  = "bx-cut"
