@@ -1,26 +1,26 @@
-title    = "hugo-porto"
-logoLink = "http://example.com/"
+title    = "Fery Prasetia - Resume & Portfolios"
+logoLink = "https://odaisomoto.github.io"
 
-[[menu]]
-  text        = "Home"
-  description = "Welcome to my personal website"
-  link        = "/"
-  target      = "_self"
+# [[menu]]
+#   text        = "Home"
+#   description = "Welcome to my personal website"
+#   link        = "/"
+#   target      = "_self"
 
-[[menu]]
-  text        = "Posts"
-  description = "Read my latest posts"
-  link        = "/posts"
-  target      = "_self"
-
-[[menu]]
-  text        = "Tags"
-  description = "Browse tags"
-  link        = "/tags"
-  target      = "_self"
+# [[menu]]
+#   text        = "Posts"
+#   description = "Read my latest posts"
+#   link        = "/posts"
+#   target      = "_self"
+#
+# [[menu]]
+#   text        = "Tags"
+#   description = "Browse tags"
+#   link        = "/tags"
+#   target      = "_self"
 
 [button]
   enabled = true
-  text    = "Get my CV"
-  link    = "files/cv.pdf"
+  text    = "Resume & Portfolios"
+  link    = "files/resume-portfolios.zip"
   target  = "_blank"

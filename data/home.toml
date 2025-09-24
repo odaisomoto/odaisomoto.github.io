@@ -15,7 +15,7 @@
 
 [[section]]
   id      = "custom"
-  enabled = true
+  enabled = false
   weight  = 4
 
 [[section]]
@@ -25,10 +25,10 @@
 
 [[section]]
   id      = "projects"
-  enabled = true
+  enabled = false
   weight  = 6
 
 [[section]]
   id      = "testimonials"
-  enabled = true
+  enabled = false
   weight  = 7

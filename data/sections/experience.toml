@@ -1,28 +1,34 @@
 # The list of companies
 [[company]]
-  name = "Company 1"
-  date = "2022 - present"
-  role = "Team Lead"
+  name = "PT. IPTEC DIGITAL SOLUTION"
+  date = "October 2024 - September 2025"
+  role = "Project manager"
   text = [
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.",
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam.",
+    "Supervising 5-12 active tasks on a daily basis, composed of 8-10 accounts.",
+    "Regularly coordinating with the creative team assigned to each active task, ensuring the creative output matches the client's brief.",
+    "Conducting brainstorm session whenever needed with internal creative team to develop creative design/visual concept that fi t with client's brief",
+    "Nurturing client relationships and doing regular check in to ensure client satisfaction (oftentimes via online video meeting).",
+    "Brainstorming with the other Senior Project Manager on what can be improved to gain leads and reduce churn rate",
   ]
 
 [[company]]
-  name = "Company 2"
-  date = "2020 - 2022"
-  role = "Backend Developer"
+  name = "PT. IPTEK DIGITAL NUSANTARA"
+  date = "August 2022 - October 2024"
+  role = "Head of Video Production Department"
   text = [
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam.",
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Cras elementum ultrices diam.",
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat.",
+    "Led end-to-end video production for multiple digital formats (ads, explainer, social content), aligned with brand strategy and marketing goals.",
+    "Managed cross-functional team including video editors, motion designers, 3D developers, cinematographers, and freelancers, ensuring quality and on-time delivery.",
+    "Collaborated with product, marketing, and engineering teams to translate technical concepts into compelling visual narratives.",
+    "Analyzed video performance using key metrics (engagement, retention) to optimize content and improve conversion.",
   ]
 
 [[company]]
-  name = "Company 3"
-  date = "2020"
-  role = "Software Engineer"
+  name = "GAINS ASSOCIATES"
+  date = "July 2021 - July 2022"
+  role = "Senior Video Editor"
   text = [
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.",
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam.",
+    "Audience Retention-Oriented Editing; edits content with dynamic pacing, visual cues, and narrative hooks to boost viewer retention and watch time.",
+    "Guides junior editors, manages team workflow, and ensures consistent quality standards.",
+    "Analyzes retention, click-through rate, and comments to refine editing patterns for future videos.",
+    "Implements intro, endscreen, subtitles, calls-to-action, and timestamps according to YouTube best practices.",
   ]

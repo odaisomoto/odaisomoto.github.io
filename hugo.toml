@@ -1,14 +1,14 @@
-baseURL      = 'https://hugo-porto.netlify.app/'
+baseURL      = 'https://odaisomoto.github.io'
 languageCode = 'en-us'
-title        = 'My New Hugo Site'
+title        = 'Fery Prasetia | Creative Manager Resume & Portfolios'
 
 
 [params]
-  description = "John Doe personal website"
-  keywords    = "John Doe, personal website, blog, portfolio"
+  description = "Fery Prasetia, Creative Manager, Video Editor, Video Production, Project Manager. Personal website for Resume & Portfolios"
+  keywords    = "Fery Prasetia, personal website, portfolio, resume, cv"
 
   [params.author]
-    name = 'John Doe'
+    name = 'Fery Prasetia'
 
 
 # Add theme using Hugo modules

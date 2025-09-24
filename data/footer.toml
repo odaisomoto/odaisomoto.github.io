@@ -1,36 +1,29 @@
-copyright = "© 2023-2025 John Doe. All rights reserved."
+copyright = "© 2025 Fery Prasetia. All rights reserved."
 
 [[social]]
   type = "linkedin"
-  id   = "johndoe"
-  url  = "https://linkedin.com/in/johndoe"
+  id   = "prasetya-effendhy-221004160"
+  url  = "https://www.linkedin.com/in/prasetya-effendhy-221004160/"
   icon = "bxl-linkedin"
   name = "LinkedIn"
 
 [[social]]
   type = "github"
-  id   = "johndoe"
-  url  = "https://github.com/johndoe"
+  id   = "odaisomoto"
+  url  = "https://github.com/odaisomoto"
   icon = "bxl-github"
   name = "GitHub"
 
 [[social]]
-  type = "facebook"
-  id   = "johndoe"
-  url  = "https://facebook.com/johndoe"
-  icon = "bxl-facebook"
-  name = "Facebook"
-
-[[social]]
   type = "telegram"
-  id   = "johndoe"
-  url  = "https://t.me/johndoe"
+  id   = "potreto"
+  url  = "https://t.me/potreto"
   icon = "bxl-telegram"
   name = "Telegram"
 
 [[social]]
   type = "whatsapp"
-  id   = "+1234567890"
-  url  = "https://wa.me/1234567890"
+  id   = "+6281216121808"
+  url  = "https://wa.me/+6281216121808"
   icon = "bxl-whatsapp"
   name = "WhatsApp"

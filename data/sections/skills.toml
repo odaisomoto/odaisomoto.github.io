@@ -1,15 +1,15 @@
 
 [[skill]]
-  title = "Cloud Computing"
-  text  = "Deep qualified with AWS cloud services. Capable of develop serverless, containerized, and traditional services. As well as, experienced with writing infrastructure as code with Terraform."
+  title = "Content Strategy & Scripting"
+  text  = "I translate raw ideas into clear content direction—writing scripts, building storyboards, and shaping narrative arcs tailored for each platform like TikTok, Reels, YouTube, or digital campaigns."
   icon  = "bx-cloud"
 
 [[skill]]
-  title = "Docker & Kubernetes"
-  text  = "Utilizing Docker, Swarm, and Kubernetes for developing and deploying applications. Proficient in multi-stage and multi-architecture builds, inclusive of docker-compose."
+  title = "Shooting & Directing"
+  text  = "Skilled in managing full-scale production from pre-pro to shoot day—handling framing, lighting, audio, and talent direction to ensure each shot aligns with brand aesthetics and emotional tone."
   icon  = "bxl-docker"
 
 [[skill]]
-  title = "Node.js & React.js"
-  text  = "Proficient in using JavaScript and TypeScript for both frontend and backend services, including RESTful and GraphQL APIs. Well-versed in frameworks such as React.js, Express.js, Nest.js, and others."
+  title = "Editing & Motion Graphics"
+  text  = "Experienced in Premiere Pro, CapCut, After Effects, and DaVinci Resolve. From high-paced Reels to cinematic storytelling, I craft visually engaging edits with strong pacing, transitions, subtitles, and color grading that convert viewers to fans."
   icon  = "bxl-nodejs"
