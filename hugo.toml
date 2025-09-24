@@ -1,0 +1,17 @@
+baseURL      = 'https://hugo-porto.netlify.app/'
+languageCode = 'en-us'
+title        = 'My New Hugo Site'
+
+
+[params]
+  description = "John Doe personal website"
+  keywords    = "John Doe, personal website, blog, portfolio"
+
+  [params.author]
+    name = 'John Doe'
+
+
+# Add theme using Hugo modules
+[module]
+  [[module.imports]]
+    path = "github.com/hugo-porto/theme"
