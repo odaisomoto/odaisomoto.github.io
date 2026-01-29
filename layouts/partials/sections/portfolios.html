@@ -1,159 +1,150 @@
 {{- $data := site.Data.sections.portfolios -}}
 
+{{- if $data.title -}}
+  <h2 class="text-4xl md:text-5xl lg:text-7xl p-5 text-center font-medium font-poppins text-gray-400">
+    {{ $data.title }}
+  </h2>
+{{- end -}}
 
-<section id="portfolios" class="py-5 md:py-10">
-  <div class="mx-auto px-4 max-w-7xl">
-    {{- if $data.title -}}
-      <h2 class="text-4xl md:text-5xl lg:text-7xl p-5 text-center font-medium font-poppins text-gray-400">
-        {{ $data.title }}
-      </h2>
-    {{- end -}}
-
-    {{- if $data.portfolio -}}
-      <style>
-        .portfolio-grid {
-          display: grid;
-          grid-template-columns: repeat(1, 1fr);
-          gap: 1.5rem;
-          margin-top: 2rem;
-        }
-        @media (min-width: 768px) {
-          .portfolio-grid {
-            grid-template-columns: repeat(2, 1fr);
-          }
-        }
-        @media (min-width: 1024px) {
-          .portfolio-grid {
-            grid-template-columns: repeat(3, 1fr);
-          }
-        }
-      </style>
-      <!-- Grid Layout -->
-      <div class="portfolio-grid">
-          {{- range $index, $item := $data.portfolio -}}
-            <div
-              class="portfolio-item group cursor-pointer"
-              onclick="openVideoModal('{{ .gdrive_id }}', '{{ .title }}', '{{ .description }}')">
-              <div
-                class="relative overflow-hidden rounded-lg bg-gray-50 shadow-md transition-transform duration-300 group-hover:scale-105 group-hover:shadow-xl">
-                <!-- Thumbnail -->
-                <div class="relative" style="padding-bottom: 133%; overflow: hidden;">
-                  {{- if .thumbnail -}}
-                    <img
-                      src="{{ .thumbnail }}"
-                      alt="{{ .title }}"
-                      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;" />
-                  {{- else -}}
-                    <!-- Default Google Drive Thumbnail -->
-                    <img
-                      src="https://drive.google.com/thumbnail?id={{ .gdrive_id }}&sz=w640"
-                      alt="{{ .title }}"
-                      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;" />
-                  {{- end -}}
-
-
-                  <!-- Play Button Overlay -->
-                  <div class="absolute inset-0 flex items-center justify-center bg-black/30 transition-opacity group-hover:bg-black/50">
-                    <div class="w-16 h-16 flex items-center justify-center rounded-full bg-white/90 shadow-lg">
-                      <svg class="w-8 h-8 text-gray-800 ml-1" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Title & Description -->
-                <div class="p-4">
-                  {{- if .title -}}
-                    <h3 class="text-lg font-bold text-gray-700 mb-2">{{ .title }}</h3>
-                  {{- end -}}
-                  {{- if .description -}}
-                    <p class="text-sm text-gray-600 line-clamp-2">{{ .description }}</p>
-                  {{- end -}}
-                </div>
-              </div>
-            </div>
-          {{- end -}}
-        </div>
-
-        <!-- Video Modal -->
+{{- if $data.portfolio -}}
+  <style>
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    @media (min-width: 768px) {
+      .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (min-width: 1024px) {
+      .portfolio-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  </style>
+  <!-- Grid Layout -->
+  <div class="portfolio-grid">
+    {{- range $index, $item := $data.portfolio -}}
+      <div class="portfolio-item group cursor-pointer" onclick="openVideoModal('{{ .gdrive_id }}', '{{ .title }}', '{{ .description }}')">
         <div
-          id="videoModal"
-          class="fixed inset-0 z-50 hidden"
-          style="display: none; align-items: center; justify-content: center; padding: 20px; overflow-y: auto; background-color: rgba(0, 0, 0, 0.95);"
-          onclick="closeVideoModal(event)">
-          <div style="position: relative; width: 100%; max-width: 800px; margin: auto;" onclick="event.stopPropagation()">
-            <!-- Close Button -->
-            <button
-              onclick="closeVideoModal()"
-              style="position: absolute; top: -40px; right: 0; z-index: 20; background: rgba(0,0,0,0.7); color: white; border: none; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 24px; line-height: 1;">
-              ✕
-            </button>
+          class="relative overflow-hidden rounded-lg bg-gray-50 shadow-md transition-transform duration-300 group-hover:scale-105 group-hover:shadow-xl">
+          <!-- Thumbnail -->
+          <div class="relative" style="padding-bottom: 133%; overflow: hidden;">
+            {{- if .thumbnail -}}
+              <img
+                src="{{ .thumbnail }}"
+                alt="{{ .title }}"
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;" />
+            {{- else -}}
+              <!-- Default Google Drive Thumbnail -->
+              <img
+                src="https://drive.google.com/thumbnail?id={{ .gdrive_id }}&sz=w640"
+                alt="{{ .title }}"
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;" />
+            {{- end -}}
 
-            <!-- Video Container -->
-            <div style="background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);">
-              <div style="position: relative; padding-bottom: 56.25%; height: 0;">
-                <iframe
-                  id="modalVideo"
-                  src=""
-                  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-                  frameborder="0"
-                  allowfullscreen
-                  allow="autoplay"></iframe>
-              </div>
 
-              <!-- Video Info -->
-              <div style="padding: 16px; background: #f9fafb;">
-                <h3 id="modalTitle" style="font-size: 20px; font-weight: bold; color: #1f2937; margin-bottom: 8px;"></h3>
-                <p id="modalDescription" style="font-size: 14px; color: #6b7280;"></p>
+            <!-- Play Button Overlay -->
+            <div class="absolute inset-0 flex items-center justify-center bg-black/30 transition-opacity group-hover:bg-black/50">
+              <div class="w-16 h-16 flex items-center justify-center rounded-full bg-white/90 shadow-lg">
+                <svg class="w-8 h-8 text-gray-800 ml-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
+                </svg>
               </div>
             </div>
           </div>
+
+          <!-- Title & Description -->
+          <div class="p-4">
+            {{- if .title -}}
+              <h3 class="text-lg font-bold text-gray-700 mb-2">{{ .title }}</h3>
+            {{- end -}}
+            {{- if .description -}}
+              <p class="text-sm text-gray-600 line-clamp-2">{{ .description }}</p>
+            {{- end -}}
+          </div>
+        </div>
+      </div>
+    {{- end -}}
+  </div>
+
+  <!-- Video Modal -->
+  <div
+    id="videoModal"
+    class="fixed inset-0 z-50 hidden"
+    style="display: none; align-items: center; justify-content: center; padding: 20px; overflow-y: auto; background-color: rgba(0, 0, 0, 0.95);"
+    onclick="closeVideoModal(event)">
+    <div style="position: relative; width: 100%; max-width: 800px; margin: auto;" onclick="event.stopPropagation()">
+      <!-- Close Button -->
+      <button
+        onclick="closeVideoModal()"
+        style="position: absolute; top: -40px; right: 0; z-index: 20; background: rgba(0,0,0,0.7); color: white; border: none; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 24px; line-height: 1;">
+        ✕
+      </button>
+
+      <!-- Video Container -->
+      <div style="background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);">
+        <div style="position: relative; padding-bottom: 56.25%; height: 0;">
+          <iframe
+            id="modalVideo"
+            src=""
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+            frameborder="0"
+            allowfullscreen
+            allow="autoplay"></iframe>
         </div>
 
-        <!-- JavaScript for Modal -->
-        <script>
-          function openVideoModal(videoId, title, description) {
-            const modal = document.getElementById("videoModal");
-            const iframe = document.getElementById("modalVideo");
-            const modalTitle = document.getElementById("modalTitle");
-            const modalDescription = document.getElementById("modalDescription");
-
-            // Set video source
-            iframe.src = "https://drive.google.com/file/d/" + videoId + "/preview";
-
-            // Set title and description
-            modalTitle.textContent = title || "";
-            modalDescription.textContent = description || "";
-
-            // Show modal
-            modal.style.display = "flex";
-            document.body.style.overflow = "hidden";
-          }
-
-          function closeVideoModal(event) {
-            const modal = document.getElementById("videoModal");
-            const iframe = document.getElementById("modalVideo");
-
-            // Stop video
-            iframe.src = "";
-
-            // Hide modal
-            modal.style.display = "none";
-            document.body.style.overflow = "";
-          }
-
-          // Close modal on ESC key
-          document.addEventListener("keydown", function (event) {
-            if (event.key === "Escape") {
-              closeVideoModal();
-            }
-          });
-        </script>
+        <!-- Video Info -->
+        <div style="padding: 16px; background: #f9fafb;">
+          <h3 id="modalTitle" style="font-size: 20px; font-weight: bold; color: #1f2937; margin-bottom: 8px;"></h3>
+          <p id="modalDescription" style="font-size: 14px; color: #6b7280;"></p>
+        </div>
       </div>
-    {{- else -}}
-      <p class="text-center text-gray-600">No portfolio items to display.</p>
-    {{- end -}}
-
+    </div>
   </div>
-</section>
+
+  <!-- JavaScript for Modal -->
+  <script>
+    function openVideoModal(videoId, title, description) {
+      const modal = document.getElementById("videoModal");
+      const iframe = document.getElementById("modalVideo");
+      const modalTitle = document.getElementById("modalTitle");
+      const modalDescription = document.getElementById("modalDescription");
+
+      // Set video source
+      iframe.src = "https://drive.google.com/file/d/" + videoId + "/preview";
+
+      // Set title and description
+      modalTitle.textContent = title || "";
+      modalDescription.textContent = description || "";
+
+      // Show modal
+      modal.style.display = "flex";
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeVideoModal(event) {
+      const modal = document.getElementById("videoModal");
+      const iframe = document.getElementById("modalVideo");
+
+      // Stop video
+      iframe.src = "";
+
+      // Hide modal
+      modal.style.display = "none";
+      document.body.style.overflow = "";
+    }
+
+    // Close modal on ESC key
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") {
+        closeVideoModal();
+      }
+    });
+  </script>
+{{- else -}}
+  <p class="text-center text-gray-600">No portfolio items to display.</p>
+{{- end -}}
