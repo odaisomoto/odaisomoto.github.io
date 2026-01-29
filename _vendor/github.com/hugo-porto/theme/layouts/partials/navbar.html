@@ -52,73 +52,86 @@
 {{ end }}
 
 
-<div class="flex items-center justify-between py-5">
-  <div class="flex items-center">
-    <a href="{{ $logoLink }}">
+<div x-data="{ mobileMenu: false }">
+  <div class="flex items-center justify-between py-5">
+    <div class="flex items-center">
+      <a href="{{ $logoLink }}">
 
-      <img src="{{ $logo }}" class="py-5 w-10 lg:w-14 min-w-10" alt="{{ $title }}" title="{{ $title }}" />
-    </a>
-    <a href="{{ $logoLink }}">
-      <h1 class="text-lg lg:text-xl px-2 lg:px-3 font-medium">{{ $title }}</h1>
-    </a>
+        <img src="{{ $logo }}" class="py-5 w-10 lg:w-14 min-w-10" alt="{{ $title }}" title="{{ $title }}" />
+      </a>
+      <a href="{{ $logoLink }}">
+        <h1 class="text-lg lg:text-xl px-2 lg:px-3 font-medium">{{ $title }}</h1>
+      </a>
+    </div>
+    <div class="hidden lg:block">
+      <ul class="flex items-center">
+        {{ range $menu }}
+          <li class="px-5">
+            <a
+              href="{{ .link }}"
+              alt="{{ .description }}"
+              title="{{ .description }}"
+              target="{{ .target }}"
+              class="cursor-pointer font-normal text-base">
+              {{ .text }}
+            </a>
+          </li>
+        {{ end }}
+        {{ if $buttonEnabled }}
+          <li class="px-5">
+            <a href="{{ $buttonLink }}" target="{{ $buttonTarget }}">
+              <button
+                class="px-10 py-4 bg-white hover:bg-gray-600 hover:text-white rounded-lg font-normal text-base transition duration-300">
+                {{ $buttonText }}
+              </button>
+            </a>
+          </li>
+        {{ end }}
+      </ul>
+    </div>
+
+    <div class="block lg:hidden mt-2">
+      <button @click="mobileMenu = true">
+        <i class="bx bx-menu text-3xl"></i>
+      </button>
+    </div>
   </div>
-  <div class="hidden lg:block">
-    <ul class="flex items-center">
+
+  <div
+    class="fixed inset-0 min-h-screen bg-black flex items-center justify-center lg:hidden"
+    x-show="mobileMenu"
+    @click.away="mobileMenu = false"
+    style="display: none; z-index: 9998;"
+    x-transition
+  >
+    <button class="absolute bottom-10 text-white" @click="mobileMenu = false" style="bottom: 10vh;">
+      <i class="bx bx-x text-5xl"></i>
+    </button>
+    <ul class="flex flex-col items-center space-y-8">
       {{ range $menu }}
-        <li class="px-5">
+        <li>
           <a
             href="{{ .link }}"
             alt="{{ .description }}"
             title="{{ .description }}"
             target="{{ .target }}"
-            class="cursor-pointer font-normal text-base">
+            class="text-white text-4xl font-semibold transition duration-300"
+            @click="mobileMenu = false"
+          >
             {{ .text }}
           </a>
         </li>
       {{ end }}
       {{ if $buttonEnabled }}
-        <li class="px-5">
-          <a href="{{ $buttonLink }}" target="{{ $buttonTarget }}">
-            <button
-              class="px-10 py-4 bg-white hover:bg-gray-600 hover:text-white rounded-lg font-normal text-base transition duration-300">
-              {{ $buttonText }}
-            </button>
+        <li>
+          <a href="{{ $buttonLink }}" target="{{ $buttonTarget }}" class="text-white text-4xl font-semibold transition duration-300" @click="mobileMenu = false">
+            {{ $buttonText }}
           </a>
         </li>
       {{ end }}
     </ul>
-  </div>
-
-  <div class="block lg:hidden mt-2">
-    <button @click="mobileMenu = true">
-      <i class="bx bx-menu text-3xl"></i>
-    </button>
   </div>
 </div>
 
-<div
-  class="pointer-events-none fixed inset-0 min-h-screen bg-black bg-opacity-75 opacity-0 lg:hidden"
-  :class="{ 'opacity-100 pointer-events-auto': mobileMenu }">
-  <div class="absolute right-0 min-h-screen bg-gray-200 py-5 px-10 w-2/3 sm:w-1/3">
-    <button class="absolute top-0 right-0 mt-9 mr-4" @click="mobileMenu = false">
-      <i class="bx bx-x text-4xl"></i>
-    </button>
-    <ul class="mt-12 flex flex-col">
-      {{ range $menu }}
-        <li class="py-2">
-          <a
-            href="{{ .link }}"
-            alt="{{ .description }}"
-            title="{{ .description }}"
-            target="{{ .target }}"
-            class="cursor-pointer font-normal">
-            {{ .text }}
-          </a>
-        </li>
-      {{ end }}
-      <li class="py-2">
-        <a href="/files/Andrew Molyuk.pdf" target="_blank" class="cursor-pointer font-normal">Get my CV</a>
-      </li>
-    </ul>
-  </div>
+
 </div>
