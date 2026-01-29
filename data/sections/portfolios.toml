@@ -1,0 +1,43 @@
+title = "Featured Works"
+
+# Add your portfolio videos here
+# To get the Google Drive ID:
+# 1. Open your video in Google Drive
+# 2. Click Share and set to "Anyone with the link"
+# 3. Copy the link: https://drive.google.com/file/d/YOUR_FILE_ID/view
+# 4. Extract YOUR_FILE_ID and paste it below
+#
+# Optional: Add a custom thumbnail image URL
+# If not provided, Google Drive's auto-generated thumbnail will be used
+
+[[portfolio]]
+  title       = "Guinness - TVC"
+  description = "SoW: Offline Editing"
+  gdrive_id   = "15C_man-U6VcnLQSW4hcdmuPvXkhUD1MD"
+
+[[portfolio]]
+  title       = "Glad2Glow - Campaign"
+  description = "SoW: Production Supervision"
+  gdrive_id   = "1RbC9LWUqP061zNLzPIb_uqananpIAyX0"
+  # thumbnail = "/img/thumbnails/project2.jpg"
+
+[[portfolio]]
+  title       = "Gatot Wesi - Short Movie"
+  description = "SoW: Script Writer, 2nd Asst. Dir."
+  gdrive_id   = "12_87DK2m7192y0pZYkj5mU4kOU9grdpA"
+  # thumbnail = "/img/thumbnails/project3.jpg"
+
+[[portfolio]]
+  title       = "Sejarah Keprajuritan Indonesia - Movie"
+  description = "SoW: Lead of Video and Content Production"
+  gdrive_id   = "1meipT6ml0ijZ3H54bRtwjfMcOm4qyCDq"
+
+[[portfolio]]
+  title       = "Monster Kuy - Variety Show"
+  description = "SoW: Creative Director"
+  gdrive_id   = "1dRQT37hAlaDpD8MTBtwQtbJ922Qugmdk"
+
+[[portfolio]]
+  title       = "PGN LNG - Short Form Video"
+  description = "SoW: End-to-End Video Producer"
+  gdrive_id   = "1yjK-wYgznA5P3qagZquiBE_rC6AnBHxQ"

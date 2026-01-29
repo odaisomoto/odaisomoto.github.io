@@ -21,7 +21,7 @@ clean:
 @PHONY: clean
 
 build: clean
-	hugo --gc --minify --cleanDestinationDir
+	hugo --buildFuture --gc --minify --cleanDestinationDir
 .PHONY: build
 
 update:
