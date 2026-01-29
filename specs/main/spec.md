@@ -83,7 +83,7 @@ Create `layouts/_default/baseof.html` to include Swiper assets
 
 ## TODO List
 
-### Part 1: Video Embedding (COMPLETED)
+### Video Embedding Tasks (COMPLETED)
 
 - [x] Update `hugo.toml` to enable unsafe HTML rendering
 - [x] Create `layouts/shortcodes/gdrive-video.html` shortcode

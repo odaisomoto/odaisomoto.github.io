@@ -14,4 +14,4 @@ Trusted by: Opini.id, GAINS Associates, Monster Group and more..
 
 {{< gdrive-video id="14KFkmCfrgKq1AvmMKIJOSBMgsL-S5QMt" >}} {{< gdrive-video id="10m-le6TS-Ui3p_9e7NuWegeWz1njtSrT" >}} {{< gdrive-video id="1E3s86dgW_R63dWve3mIkb_wjZz3r5eIq" >}}
 
-More Videos, please check: https://drive.google.com/drive/folders/1NVL3iVwavEUlUE3-5cWvJgp4bkufqUzg?usp=drive_link
+More Videos, please check: <https://drive.google.com/drive/folders/1NVL3iVwavEUlUE3-5cWvJgp4bkufqUzg?usp=drive_link>

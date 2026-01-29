@@ -24,13 +24,13 @@ You can easily embed videos from Google Drive using the custom shortcode:
 
 **Basic usage with default sizing:**
 
-```
+```markdown
 {{</* gdrive-video id="YOUR_FILE_ID" */>}}
 ```
 
 **Custom width and height:**
 
-```
+```markdown
 {{</* gdrive-video id="YOUR_FILE_ID" width="100%" height="600" */>}}
 ```
 

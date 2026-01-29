@@ -12,4 +12,4 @@ Trusted by: Guinness, Telkomsel, BCA, Bakpia Mino, and more.
 
 {{< gdrive-video id="15C_man-U6VcnLQSW4hcdmuPvXkhUD1MD" >}} {{< gdrive-video id="1BPnQQgBkChlCX3tcJOU5EOY9CSCOLUq4" >}} {{< gdrive-video id="1EynY5YtpZgPAq7u5Kqu6Qaj5jqQvm7Pi" >}}
 
-More Videos, please check: https://drive.google.com/drive/folders/1ciWVQWhRpEQpCFB8T8qv4ysxUcqGVqBj?usp=drive_link
+More Videos, please check: <https://drive.google.com/drive/folders/1ciWVQWhRpEQpCFB8T8qv4ysxUcqGVqBj?usp=drive_link>
