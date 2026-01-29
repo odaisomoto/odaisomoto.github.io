@@ -1,0 +1,34 @@
+Watching for changes in /Users/tdtimur/WebstormProjects/odaisomoto.github.io/{_vendor,archetypes,assets,content,data,layouts,package.json,static}
+Watching for config changes in /Users/tdtimur/WebstormProjects/odaisomoto.github.io/hugo.toml, /Users/tdtimur/WebstormProjects/odaisomoto.github.io/_vendor/github.com/hugo-porto/theme/hugo.toml, /Users/tdtimur/WebstormProjects/odaisomoto.github.io/go.mod
+Start building sites … 
+hugo v0.147.8+extended+withdeploy darwin/arm64 BuildDate=2025-06-07T12:59:52Z VendorInfo=brew
+
+
+                  │ EN 
+──────────────────┼────
+ Pages            │ 24 
+ Paginator pages  │  0 
+ Non-page files   │  7 
+ Static files     │  5 
+ Processed images │  1 
+ Aliases          │  7 
+ Cleaned          │  0 
+
+Built in 25 ms
+Environment: "development"
+Serving pages from disk
+Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
+Web Server is available at http://localhost:1313/ (bind address 0.0.0.0) 
+Press Ctrl+C to stop
+
+Change detected, rebuilding site (#1).
+2026-01-29 19:10:07.848 +0700
+Template changed /_default/baseof.html
+Web Server is available at http://localhost:1313/ (bind address 0.0.0.0)
+Total in 12 ms
+
+Change detected, rebuilding site (#2).
+2026-01-29 19:10:29.317 +0700
+Template changed /_default/baseof.html
+Web Server is available at http://localhost:1313/ (bind address 0.0.0.0)
+Total in 8 ms
